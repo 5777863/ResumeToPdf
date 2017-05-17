@@ -1,0 +1,11 @@
+{
+  "name": "nyblapp",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mysql": "^2.13.0",
+    "nodemailer": "^4.0.1",
+    "pdfkit": "^0.8.0"
+  }
+}

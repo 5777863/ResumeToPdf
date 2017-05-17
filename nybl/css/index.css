@@ -1,0 +1,159 @@
+.clear:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.main {
+	max-width: 1400px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.div-form {
+	width: 100%;
+	padding: 0 30px 30px 30px;
+	border: 1px solid grey;
+	margin: 40px auto;
+}
+
+.inputphoto {
+	width: 30%;
+	padding-right: 15px;
+	display: inline-block;
+	float: left;
+}
+
+.inputcontcts {
+	width: 70%;
+	padding-left: 15px;
+	display: inline-block;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.test {
+	background: white;
+	position: relative;
+	top: -12px;
+	z-index: 10;
+	padding: 0 2px;
+}
+
+p.h1{
+	font-size:1.8em;
+}
+
+p{
+	text-align: center;
+}
+
+
+.div-form input {
+	border: 1px solid grey;
+	width: 100%;
+	height: 30px;
+	margin: 10px 0;
+}
+
+ textarea {
+	border: 1px solid grey;
+	width: 100%;
+	margin: 10px 0;
+}
+
+/*button a*/
+.divButton {
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.divButton div {
+	float: left;
+	width: 25%;
+	margin: 0 4.1666%;
+	min-width: 80px;
+}
+
+input[type="submit"],input[type="file"]{
+	display:none;
+}
+
+
+.divcheck div{
+	display:inline-block;
+	width:80%;
+}
+
+input[type="checkbox"]{
+	width:20px;
+	margin:auto;
+	}
+
+.divexists{
+	width:25%;
+	margin:10px auto;
+	text-align:center;
+}
+
+#output{
+	display:none;
+	height:200px;
+}
+
+span.button {
+	display: inline-block;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	outline: none;
+	border-width: 2px 0;
+	border-style: solid none;
+	border-color: #7888d6 #000 #5265c7;
+	border-radius: 2px;
+	background: linear-gradient(#5265c7, #7888d6) #5265c7;
+	transition: 0.2s;
+}
+
+span.button:hover {
+	background: linear-gradient(#465abd, #4683bd) #465abd;
+}
+
+span.button:active {
+	background: linear-gradient(#0a28bf, #465abd) #0a28bf;
+}
+
+span.disable {
+	pointer-events: none; /* делаем ссылку некликабельной */
+	cursor: default; /* устанавливаем курсор в виде стрелки */
+	color: #999; /* цвет текста для нективной ссылки */
+}
+
+
+
+.div-table {
+	width: 100%;
+	padding: 40px 0;
+	border: 1px solid grey;
+}
+

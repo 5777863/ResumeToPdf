@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ResumeToPdf</title>
+<meta charset="utf-8">
+<meta http-equiv="content-language" content="ru">
+<link href="css/index.css" rel="stylesheet">
+<!-- Add jQuery library -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div class='main'>
+		<div class='div-form'>
+			<form id='formFile' name="sendform" enctype="multipart/form-data"
+				method="post" action='/topdf'>
+				<span class='test'>ResumeToPdf</span>
+				<p class='h1'>Заполните форму и получите резюме в pdf формате</p>
+				<p >поля со *обязательны к заполнению</p>
+				<div class='frmheader clear'>
+					<div class='inputphoto'>
+						<p>*Загрузить фото(jpeg, png, до 10Мб)</p>
+						<img id='output'>
+						<!-- форма загрузки файла -->
+						<div class="divButton">
+							<label> <input type="file" id='file_v' name="photo" required>
+								<span id='file' class='button'>Выберите файл</span>
+							</label>
+						</div>
+
+					</div>
+					<div class='inputcontcts'>
+						<div>
+							<input type='text' placeholder='*ФИО' name='fio'
+								autocomplete='off' required>
+						</div>
+						<div>
+							<input type='text' placeholder='*Должность' name='position'
+								autocomplete='off' required>
+						</div>
+						<div>
+							<input type='email' placeholder='*Email' name='email'
+								autocomplete='off' required>
+						</div>
+						<div>
+							<input type='tel' placeholder='Телефон' name='phone'
+								autocomplete='off'>
+						</div>
+						<div>
+							<input type='text' placeholder='Skype' name='skype'
+								autocomplete='off'>
+						</div>
+						<div>
+							<input type='url' placeholder='LinkedIn' name='linkedin'
+								autocomplete='off'>
+						</div>
+						<div>
+							<input type='url' placeholder='GitHub' name='github'
+								autocomplete='off'>
+						</div>
+					</div>
+				</div>
+				<div>
+					<input type='text' placeholder='*Возраст' name='old'
+						autocomplete='off' required>
+				</div>
+				<div>
+					<input type='text' placeholder='*Образование' name='eduk'
+						autocomplete='off' required>
+				</div>
+				<div>
+					<textarea name='cours' maxlength='200' cols='50' rows='3'
+						placeholder='Курсы, сертификаты'></textarea>
+				</div>
+				<div>
+					<textarea name='exper' maxlength='1000' cols='50' rows='10'
+						placeholder='Опыт работы, опишите период, место работы, проекты над которыми работали, начиная с последнего'></textarea>
+				</div>
+				<div>
+					<input type='text' placeholder='Знание языков' name='lang'
+						autocomplete='off'>
+				</div>
+				<div>
+					<textarea name='dop' maxlength='400' cols='50' rows='3'
+						placeholder='Дополнительно'></textarea>
+				</div>
+				<div id='validerror' class='validerror'></div>
+				<div class='divButton clear'>
+					<div class='divcheck'>
+						<div>
+							<input type="checkbox" name='sendmail' />
+						</div>
+						<label>Получить pdf на почту</label>
+					</div>
+					<div>
+						<label> <input class='submit' type="submit"> <span
+							class='button'>Загрузить результат</span>
+						</label>
+					</div>
+
+				</div>
+			</form>
+		</div>
+
+
+
+
+		<div class='div-form clear'>
+			<p class='h1'>Если Вы уже заполняли форму, для получения фала на
+				почту введите email, который указывали при заполнении формы</p>
+
+			<div>
+				<input type='email' placeholder='Email' id='existsmail' name='email'
+					autocomplete='off' required>
+			</div>
+			<div class='divexists'>
+				<label> <input id='exisub' class='submit' type="submit">
+					<span class='button'>Получить</span>
+				</label>
+			</div>
+
+		</div>
+	</div>
+</body>
